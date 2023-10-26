@@ -23,6 +23,32 @@
   height: 50px;
 }
 
+.a-navbar {
+  position: relative;
+  text-decoration: none;
+  padding: 0 10px;
+  margin-left: 20px;
+}
+
+.a-navbar:hover {
+  color: rgb(135, 135, 135);
+}
+
+.a-navbar::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(138, 138, 138);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease-out;
+}
+
+.a-navbar:hover:after {
+  width: 100%;
+}
+
 .imagem-carrosel-1, .imagem-carrosel-2  {
   overflow: hidden;
   height: 92%;
