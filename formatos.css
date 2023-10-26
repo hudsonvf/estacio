@@ -16,6 +16,8 @@
   scroll-behavior: smooth;
 }
 
+/****** Header e Nav ( Navbar ) *******************************************/
+
 .logo-navbar-fritadas {
   width: 50px;
   height: 50px;
@@ -23,7 +25,7 @@
 
 .imagem-carrosel-1, .imagem-carrosel-2  {
   overflow: hidden;
-  height: 92vh;
+  height: 92%;
 }
 
 .div-no-banner {
@@ -31,7 +33,7 @@
   background-color: var(--cor-laranja);
   border-radius: 20px;
   padding-top: 30px;
-  height: 230px;
+  height: 30%;
 }
 
 .div-no-banner2 {
@@ -39,7 +41,7 @@
   background-color: var(--cor-azul);
   border-radius: 20px;
   padding-top: 30px;
-  height: 230px;
+  height: 30%;
 }
 
 .h1-no-banner, .p-no-banner {
@@ -50,22 +52,10 @@
   color: white;
 }
 
-button {
-  cursor: pointer;
-}
-
-.ul-no-banner {
-  color: white;
-  list-style-type: disc;
-  margin-left: 7%;
-}
-
-.li-no-banner {
-  text-align: left;
-}
+/****** Section Sessao ( Body ) *********************************************/
 
 .sessao {
-  height: 400vh;
+  height: 100%;
   margin-top: 50px;
 }
 
@@ -97,13 +87,22 @@ button {
   border-radius: 50px;
 }
 
+/****** Section 2 Sessao 2 *************************/
+
+.sessao2-div {
+  width: 100%;
+}
+
+.sessao2-imagem {
+  overflow: hidden;
+  opacity: 0.5;
+}
 
 
 
 
 
-
-
+/****** Footer ****************************************************************/
 
 footer {
   background-color: black;
@@ -111,4 +110,3 @@ footer {
   font-size: 11px;
   padding: 10px;
 }
-
