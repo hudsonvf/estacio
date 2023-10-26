@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------  Bootstrap Bundle  -------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!---------------  Bootstrap Icons  --------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!---------------  Arquivo Css  --------------->
+    <link rel="stylesheet" href="./formatos.css" />
+    <title>Receitas</title>
+  </head>
+  <body>
+    <!--------------- Inicio Header --------------->
+
+    <header>
+      <!--------------- Inicio Nav NavBar --------------->
+
+      <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo-navbar-fritadas"
+              src="./assets/imagens/fritadas.png"
+              alt="logomarca logo de um restaurante, cozinha, comida, pedido, ifood, bar, receitas"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="./menu.html">Menu</a>
+              <a class="nav-link" href="./cadastro.html">Cadastro</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--------------- Inicio do Banner Slider Carrossel --------------->
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/imagens/comida.png"
+              class="d-block w-100 imagem-carrosel-1"
+              alt="imagem de pratos, comidas, restaurante, kilo, a la carte, rodízio, self service"
+            />
+            <div class="carousel-caption d-none d-md-block mt-3 div-no-banner">
+              <h1 class="h1-no-banner">Comidas</h1>
+              <p>
+                Pratos deliciosos! Feitos com muito carinho e dedicação pra você
+                e pra sua família!! <br />
+                Temos um cuidado particular com a higienização, normas e padrões
+                na gestão alimentar.<br />
+                Somos especialistas em nutrição e qualidade dos alimentos.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/imagens/bebida.png"
+              class="d-block w-100 imagem-carrosel-2"
+              alt="imagem de brinde de bebidas, drinks, happy hour, cardápio de bebidas"
+            />
+            <div class="carousel-caption d-none d-md-block mt-3 div-no-banner2">
+              <h1 class="h1-no-banner2">& Bebidas</h1>
+              <p class="p-no-banner2 pt-3">
+                Happy Hour todos os dias das 17h às 20h com desconto de 50%<br />
+                e com direito a todas as bebidas incluídas do cardápio!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Voltar</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Passar</span>
+        </button>
+      </div>
+    </header>
+
+    <!--------------- Inicio do Conteúdo ( Body ) --------------->
+
+    <article>
+      <section>
+        <div class="sessao">
+          <div class="texto-sessao mt-5">
+            <br />
+            <br />
+            <br />
+            <h1>Fritada's - Comidas & Bebidas</h1>
+            <p class="mt-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates natus aliquam accusamus placeat ullam a omnis amet
+              exercitationem magni consectetur excepturi illo eius facere nulla
+              recusandae earum maiores minima expedita delectus minus
+              consequatur, neque nemo iure! Animi eligendi qui voluptates quod,
+              soluta mollitia eos consequuntur cupiditate, aut aperiam ipsam
+              esse nesciunt numquam ratione quo aspernatur fugit porro eaque
+              repellendus provident. Laudantium maxime illo distinctio
+            </p>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="sessao-conteudo mt-5">
+            <div class="row px-5">
+              <div class="col-sm-7">
+                <div class="texto-sessao-conteudo px-5">
+                  <h1 class="p-5">teste</h1>
+                  <p class="px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    laudantium reprehenderit sunt est omnis nemo aperiam itaque
+                    voluptatibus tenetur vitae.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-5 imagem-sessao-conteudo">
+                <div class="card border-light">
+                  <img
+                    class="imagem-bowl-sessao-conteudo"
+                    src="./assets/imagens/bowl.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 px-5">
+              <div class="col-sm-7 imagem-sessao-conteudo">
+                <div class="card border-light">
+                  <img
+                    class="imagem-salmon-sessao-conteudo"
+                    src="./assets/imagens/salmon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <div class="texto-sessao-conteudo px-5">
+                  <h1 class="p-5">teste</h1>
+                  <p class="px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    laudantium reprehenderit sunt est omnis nemo aperiam itaque
+                    voluptatibus tenetur vitae.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 px-5">
+              <div class="col-sm-7">
+                <div class="texto-sessao-conteudo px-5">
+                  <h1 class="p-5">teste</h1>
+                  <p class="px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    laudantium reprehenderit sunt est omnis nemo aperiam itaque
+                    voluptatibus tenetur vitae.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-5 imagem-sessao-conteudo">
+                <div class="card border-light">
+                  <img
+                    class="imagem-salada-sessao-conteudo"
+                    src="./assets/imagens/salada.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------- Inicio da Section 2 - CTA --------------->
+
+      <section>
+        <div class="conteiner">
+          <div class="row">
+            <p>teste</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!--------------- Inicio do Footer --------------->
+
+    <footer>
+      <div class="d-flex justify-content-center align-items-center mt-3">
+        <p>
+          &copy; &nbsp; - &nbsp; Fritada's Comidas & Drinks
+          &nbsp;&nbsp;&reg;&nbsp;&nbsp; criado por Hudson Fonseca &#8482;
+        </p>
+      </div>
+    </footer>
+
+    <!---------------  Bootstrap Bundle  --------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!---------------  Bootstrap 6.4.2 Icons Bundle  --------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
