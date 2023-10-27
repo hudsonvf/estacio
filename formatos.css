@@ -141,7 +141,7 @@
 .div-na-imagem-sessao2 {
   background-color: var(--cor-vermelho-transparente);
   width: 45%;
-  height: 40%;
+  height: 45%;
   border-radius: 13px;
   position: relative;
   margin: 0 auto;
@@ -158,12 +158,12 @@
   margin-top: -400px;
   text-align: center;
   padding-top: 60px;
-  font-size: xx-large;
+  font-size: x-large;
   color: var(--cor-branco);
 }
 
 .h1-na-imagem-sessao2 {
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
   color: var(--cor-branco);
 }
