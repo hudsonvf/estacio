@@ -12,9 +12,14 @@
     />
     <!---------------  Bootstrap Icons  --------------->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <!---------------  Font Awesome Icons  --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!---------------  Arquivo Css  --------------->
     <link rel="stylesheet" href="./formatos.css" />
     <title>Menu Fritada's</title>
@@ -59,7 +64,7 @@
       <!--------------- Inicio do Conteudo ( Body ) --------------->
       <section class="section-conteudo-menu">
 
-        <div class="texto-sessao mt-5 px-5">
+        <div class="texto-sessao mt-5 mb-5 px-5 py-5">
           <h1 class="h1-sessao">Menu de Receitas - Fritada's</h1>
           <p class="mt-4 px-5 p-conteudo-sessao2">
             Aqui no nosso <span><b>MENU</b></span> Fritada's você vai encontrar receitas deliciosas,
@@ -69,9 +74,17 @@
             certeza você vai proporcionar uma experiência gastronômica inesquecível!
           </p>
         </div>
-
-        <div class="container">
+        
+        <div class="container pt-5">
           <div class="row">
+          <div class="input-group mb-3 pesquisar-no-menu">
+            <input type="text" id="authorSearch" class="text-center form-control author-search" 
+              placeholder="🔍 Pesquise a receita que deseja..." aria-label="Pesquise pela receita..."
+              aria-describedby="button-addon2">
+          </div>
+          
+          <br/>
+          <br/>
 
               <div class="cards-menu-1 d-flex justify-content-around">
 
@@ -85,29 +98,30 @@
                       preparadas pela nossa equipe com muito cuidado e curadoria para você
                       fazer da comida uma experiência fantástica!</p>
                   </div>
-                  <div class="card-body text-end">
-                    <a href="#" class="card-link preco-livro-menu">R$ 89,90</a>
+                  <div class="card-body text-center">
+                    <a href="#" class="card-link preco-livro-menu">
+                        <button class="button-91" role="button"> &nbsp; &nbsp; R$ 89,90 &nbsp; &nbsp; </button>
+                    </a>
                   </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/b.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Salada de prosciutto<br/> e aspargos</h5>
+                    <h5 class="card-title">Salada de prosciutto e aspargos</h5>
                     <p class="card-text">Uma salada extraordinária para dividir que pode
                       muito bem ser o prato principal!...</p>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Prosciutto</li>
                     <li class="list-group-item">Aspargos</li>
-                    <li class="list-group-item">Mostarda dijon...</li>
+                    <li class="list-group-item">Mostarda dijon ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-plate-wheat"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" 
@@ -195,21 +209,23 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/c.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Caldo de legumes com frango</h5>
+                    <p class="card-text">Esse caldo de legumes com peito de frango e cúrcuma
+                      vai dar um "UP" na imunidade de...
+                    </p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Legumes</li>
+                    <li class="list-group-item">Frango</li>
+                    <li class="list-group-item">Cúrcuma ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop02">
-                        Clique para ver a<br/>
-                          receita completa
+                        <span class="material-symbols-rounded">
+                          skillet
+                          </span> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop02" data-bs-backdrop="static" 
@@ -218,12 +234,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Caldo de legumes com frango</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Esse caldo de legumes com peito de frango e cúrcuma
+                            vai dar um "UP" na imunidade de... 
                             
                             <br/>
                             <br/>
@@ -234,10 +250,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Peito de Frango</li>
+                                  <li>Legumes frescos</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Cúrcuma</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -301,22 +317,21 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/d.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Carne assada com bacon e batatas</h5>
+                    <p class="card-text">Carne de panela assada deliciosa com bacon e batatas é uma
+                      excelente opção de prato em uma panela só!</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Carne assada</li>
+                    <li class="list-group-item">Batatas</li>
+                    <li class="list-group-item">Bacon ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop03">
-                        Clique para ver a<br/>
-                          receita completa
-                      </button>                      
+                        <i class="fa-solid fa-kitchen-set"></i> &nbsp; Receita completa
+                      </button>
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop03" data-bs-backdrop="static" 
                       data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
@@ -324,12 +339,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Carne assada com bacon e batatas</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Carne de panela assada deliciosa com bacon e batatas é uma
+                            excelente opção de prato em uma panela só! 
                             
                             <br/>
                             <br/>
@@ -340,10 +355,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Carte corte cubos</li>
+                                  <li>Batatas</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Bacon</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -403,21 +418,21 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/h.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title 
-                      and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Hamburgão!!</h5>
+                    <p class="card-text">Esse hamburgão é digno de estar nas mais respeitadas
+                      hamburguerias da cidade! Com molho especial da casa ele...
+                    </p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Carne corte especial</li>
+                    <li class="list-group-item">Molho alho e gorgonzola</li>
+                    <li class="list-group-item">Bacon ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop04">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-burger"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop04" data-bs-backdrop="static" 
@@ -426,13 +441,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Hamburgão!!</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
-                            
+                            Esse hamburgão é digno de estar nas mais respeitadas
+                            hamburguerias da cidade! Com molho especial da casa ele... 
                             <br/>
                             <br/>
                             <img src="./assets/imagens/h.png" class="card-img-top" alt="...">
@@ -442,10 +456,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
-                                  <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Carne moída corte especial</li>
+                                  <li>Alface fresca</li>
+                                  <li>Molho ranch</li>
+                                  <li>Tomate</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -505,21 +519,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/f.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Fajitas de frango e acompanhamentos</h5>
+                    <p class="card-text">Essas fajitas de frango temperado com molho artesanal são para
+                      toda a família dividir e se deliciar!</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Peito de frango</li>
+                    <li class="list-group-item">Grão de bico</li>
+                    <li class="list-group-item">Arroz ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop05">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-pepper-hot"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop05" data-bs-backdrop="static" 
@@ -528,12 +541,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Fajitas de frango e acompanhamentos</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Essas fajitas de frango temperado com molho artesanal são para
+                            toda a família dividir e se deliciar!
                             
                             <br/>
                             <br/>
@@ -544,10 +557,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Massa de pão</li>
+                                  <li>Frango em cubos</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Pimentões</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -611,21 +624,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/g.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Pizza margherita especial</h5>
+                    <p class="card-text">Essa pizza é uma receita rápida e muito saborosa, sabor margherita
+                      especial traz gorgonzola, calabresa picante, majericão...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Calabresa picante</li>
+                    <li class="list-group-item">Mussarela e gorgonzola</li>
+                    <li class="list-group-item">Manjericão ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop06">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-pizza-slice"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop06" data-bs-backdrop="static" 
@@ -634,12 +646,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Pizza margherita especial</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Essa pizza é uma receita rápida e muito saborosa, sabor margherita
+                            especial traz gorgonzola, calabresa picante, majericão... 
                             
                             <br/>
                             <br/>
@@ -650,11 +662,11 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
-                                  <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
-                                  <li>Lentilha</li>
+                                  <li>Massa de pizza</li>
+                                  <li>Calabresa especial</li>
+                                  <li>Manjericão</li>
+                                  <li>Tomate</li>
+                                  <li>Queijo</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
                                   <li>Morango</li>
@@ -713,9 +725,10 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/e.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title 
-                      and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Ramén / Lámen completo</h5>
+                    <p class="card-text">Receita de Lámen / Ramén Japonês de porco com shoyu e ovo, completo 
+                      fácil e rápido... 
+                      </p>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">An item</li>
@@ -726,8 +739,9 @@
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop07">
-                        Clique para ver a<br/>
-                          receita completa
+                        <span class="material-symbols-rounded">
+                          ramen_dining
+                          </span> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop07" data-bs-backdrop="static" 
@@ -736,12 +750,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Ramén / Lámen completo</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Receita de Lámen / Ramén Japonês de porco com shoyu e ovo, completo 
+                            fácil e rápido... 
                             
                             <br/>
                             <br/>
@@ -752,10 +766,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Macarrão noodles</li>
+                                  <li>Bisteca suína</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Ovo</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -815,21 +829,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/i.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Parrilla Argentina</h5>
+                    <p class="card-text">Parrilla Argentina deliciosa na grelha com tomilho e especiarias
+                      trazem um gosto refinado para o grelhado de sábado a noite...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Parrilla</li>
+                    <li class="list-group-item">Pimenta preta</li>
+                    <li class="list-group-item">Pimentões...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop12">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-drumstick-bite"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop12" data-bs-backdrop="static" 
@@ -838,12 +851,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Parrilla Argentina</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Parrilla Argentina deliciosa na grelha com tomilho e especiarias
+                            trazem um gosto refinado para o grelhado de sábado a noite... 
                             
                             <br/>
                             <br/>
@@ -854,10 +867,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Parrilla</li>
+                                  <li>Pimentões</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Pimenta preta</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -921,21 +934,22 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/j.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Festival de caldos</h5>
+                    <p class="card-text">Nessa receitas trazemos 7 opções de caldos para sua noite
+                      fria ser um verdadeiro festival quentinho, aconchegante e saboroso!...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Caldo verde</li>
+                    <li class="list-group-item">Caldo de cogumelo</li>
+                    <li class="list-group-item">Vaca atolada ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop13">
-                        Clique para ver a<br/>
-                          receita completa
+                        <span class="material-symbols-rounded">
+                          skillet_cooktop
+                          </span> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop13" data-bs-backdrop="static" 
@@ -944,12 +958,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Festival de caldos</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Nessa receitas trazemos 7 opções de caldos para sua noite
+                            fria ser um verdadeiro festival quentinho, aconchegante e saboroso!... 
                             
                             <br/>
                             <br/>
@@ -960,8 +974,8 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Mandioca</li>
+                                  <li>Frango desfiado</li>
                                   <li>Mix de folhas verdes</li>
                                   <li>Ervilha</li>
                                   <li>Lentilha</li>
@@ -1023,21 +1037,21 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/n.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title 
-                      and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Café da manhã saldável e reforçado</h5>
+                    <p class="card-text">Esse é o verdadeiro café da manhã dos campeões super saldável
+                      e completo ...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Morning oats</li>
+                    <li class="list-group-item">Torrada frutas vermelhas</li>
+                    <li class="list-group-item">Ovo benedict ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop14">
-                        Clique para ver a<br/>
-                          receita completa
+                        <span class="material-symbols-rounded">bakery_dining</span>
+                        &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop14" data-bs-backdrop="static" 
@@ -1046,12 +1060,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Café da manhã saldável e reforçado</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Esse é o verdadeiro café da manhã dos campeões super saldável
+                            e completo, um cafe da manhã digno daquele seu hotel favorito... 
                             
                             <br/>
                             <br/>
@@ -1062,17 +1076,17 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
-                                  <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
-                                  <li>Lentilha</li>
-                                  <li>Abobrinha</li>
-                                  <li>Figo</li>
-                                  <li>Morango</li>
-                                  <li>Chalota</li>
-                                  <li>Mostarda dijon</li>
-                                  <li>Suco de limão</li>
+                                  <li>Torrada</li>
+                                  <li>Croissant</li>
+                                  <li>Mix de frutas vermelhas</li>
+                                  <li>Suco de laranja</li>
+                                  <li>Brownie</li>
+                                  <li>Cookie</li>
+                                  <li>Muffin</li>
+                                  <li>Cuzcuz</li>
+                                  <li>Tapioca</li>
+                                  <li>Pão de queijo</li>
+                                  <li>Pimenta</li>
                                   <li>Parmesão</li>
                                   <li>Sal</li>
                                   <li>Pimenta</li>
@@ -1085,6 +1099,8 @@
                                 <ul>
                                   <li>Pote grande</li>
                                   <li>Panela para cozimento</li>
+                                  <li>Frigideira</li>
+                                  <li>Pote médio</li>
                                   <li>Escorredor</li>
                                   <li>Tigela</li>
                                   <li>Descascador</li>
@@ -1125,21 +1141,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/l.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Frango Tikka Masala</h5>
+                    <p class="card-text">Receita deliciosa indiana de frango tikka masala com macarrão
+                      ao molho curry e especiarias típicas da região...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Peito de Frango</li>
+                    <li class="list-group-item">Macarrão</li>
+                    <li class="list-group-item">Açafrão ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop11">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-utensils"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop11" data-bs-backdrop="static" 
@@ -1148,12 +1163,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Frango Tikka Masala</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Receita deliciosa indiana de frango tikka masala com macarrão
+                            ao molho curry e especiarias típicas da região... 
                             
                             <br/>
                             <br/>
@@ -1164,12 +1179,12 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Frango</li>
+                                  <li>Açafrão</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
-                                  <li>Lentilha</li>
-                                  <li>Abobrinha</li>
+                                  <li>Curry</li>
+                                  <li>Especiarias</li>
+                                  <li>Macarrão</li>
                                   <li>Figo</li>
                                   <li>Morango</li>
                                   <li>Chalota</li>
@@ -1185,8 +1200,9 @@
                               <div class="col-6">
                                 <b>Equipamentos:</b>
                                 <ul>
-                                  <li>Pote grande</li>
+                                  <li>Panela de pressão</li>
                                   <li>Panela para cozimento</li>
+                                  <li>Frigideira</li>
                                   <li>Escorredor</li>
                                   <li>Tigela</li>
                                   <li>Descascador</li>
@@ -1231,21 +1247,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/m.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Rabada à moda Brasileira</h5>
+                    <p class="card-text">Receita espetacular de rabada com agrião, arroz piamontese, farofa e
+                      acompanhamentos divi-nos pra ninguém botar defeito!...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Rabada</li>
+                    <li class="list-group-item">Arroz piamontese</li>
+                    <li class="list-group-item">Agrião ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop08">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-bowl-food"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop08" data-bs-backdrop="static" 
@@ -1254,12 +1269,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Rabada à moda Brasileira</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Receita espetacular de rabada com agrião, arroz piamontese, farofa e
+                            acompanhamentos divi-nos pra ninguém botar defeito!... 
                             
                             <br/>
                             <br/>
@@ -1270,10 +1285,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Rabada</li>
+                                  <li>Agrião</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Arroz piamontese</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -1291,7 +1306,7 @@
                               <div class="col-6">
                                 <b>Equipamentos:</b>
                                 <ul>
-                                  <li>Pote grande</li>
+                                  <li>Panela de pressão</li>
                                   <li>Panela para cozimento</li>
                                   <li>Escorredor</li>
                                   <li>Tigela</li>
@@ -1333,21 +1348,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/o.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title 
-                      and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Prato feito com "up" lagarto assado</h5>
+                    <p class="card-text">Nessa receita faremos um lagarto assado no forno com molho madeira
+                      acompanhado do queridinho prato feito...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Corte lagarto</li>
+                    <li class="list-group-item">Arroz feijão ovo</li>
+                    <li class="list-group-item">Molho madeira...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop09">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-fire-burner"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop09" data-bs-backdrop="static" 
@@ -1356,12 +1370,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Prato feito com "up" lagarto assado</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            Nessa receita faremos um lagarto assado no forno com molho madeira
+                            acompanhado do queridinho prato feito... 
                             
                             <br/>
                             <br/>
@@ -1372,12 +1386,12 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Corte lagarto</li>
+                                  <li>Arroz</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
-                                  <li>Lentilha</li>
-                                  <li>Abobrinha</li>
+                                  <li>Molho madeira</li>
+                                  <li>Feijão</li>
+                                  <li>Ovo</li>
                                   <li>Figo</li>
                                   <li>Morango</li>
                                   <li>Chalota</li>
@@ -1395,6 +1409,7 @@
                                 <ul>
                                   <li>Pote grande</li>
                                   <li>Panela para cozimento</li>
+                                  <li>Frigideira</li>
                                   <li>Escorredor</li>
                                   <li>Tigela</li>
                                   <li>Descascador</li>
@@ -1436,21 +1451,20 @@
                 <div class="card" style="width: 18rem;">
                   <img src="./assets/imagens/k.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and 
-                        make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Churrasco na grelha e camarão</h5>
+                    <p class="card-text">O chef japonês Tokuro Fijiusaysan ensina você a fazer um camarão maravilhoso
+                      aproveitando o fogo daquele churrasquinho tradicional...</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">Camarão</li>
+                    <li class="list-group-item">Carne churrasco</li>
+                    <li class="list-group-item">Molho especial ...</li>
                   </ul>
                   <div class="card-body text-center">
                     <a href="#" class="card-link">
                       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop10">
-                        Clique para ver a<br/>
-                          receita completa
+                        <i class="fa-solid fa-shrimp"></i> &nbsp; Receita completa
                       </button>                      
                     </a>
                     <div class="modal fade modal-lg" id="staticBackdrop10" data-bs-backdrop="static" 
@@ -1459,12 +1473,12 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Churrasco na grelha com camarão</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body text-start p-3">
-                            Uma salada extraordinária para dividir que pode muito bem ser o prato principal!
-                            Recheada de sabores e com bastante proteína essa salada traz o frescor e... 
+                            O chef japonês Tokuro Fijiusaysan ensina você a fazer um camarão maravilhoso
+                            aproveitando o fogo daquele churrasquinho tradicional...
                             
                             <br/>
                             <br/>
@@ -1475,10 +1489,10 @@
                               <div class="col-6">
                                 <b>Ingredientes:</b>
                                 <ul>
-                                  <li>Prosciutto</li>
-                                  <li>Aspargos</li>
+                                  <li>Camarão</li>
+                                  <li>Corte para churrasco</li>
                                   <li>Mix de folhas verdes</li>
-                                  <li>Ervilha</li>
+                                  <li>Molho para frutos do mar</li>
                                   <li>Lentilha</li>
                                   <li>Abobrinha</li>
                                   <li>Figo</li>
@@ -1496,9 +1510,9 @@
                               <div class="col-6">
                                 <b>Equipamentos:</b>
                                 <ul>
-                                  <li>Pote grande</li>
+                                  <li>Churrasqueira</li>
                                   <li>Panela para cozimento</li>
-                                  <li>Escorredor</li>
+                                  <li>Grelha</li>
                                   <li>Tigela</li>
                                   <li>Descascador</li>
                                   <li>Tábua</li>
@@ -1535,6 +1549,14 @@
                   </div>
                 </div>
               </div>
+
+              <div class="text-center mt-5">
+              <button class="btn btn-light" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                &nbsp; Carregando mais receitas...
+              </button>
+            </div>
+
             </div>
           </div>
         </section>
@@ -1551,12 +1573,29 @@
       </div>
     </footer>
 
+    <!---------------  Script Javascript  --------------->
+    <script src="./main.js"></script>
+
     <!---------------  Bootstrap Bundle  --------------->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!---------------  Font Awesome Bundle  --------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" 
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!---------------  Material Icons  --------------->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+
     <!---------------  Bootstrap 6.4.2 Icons Bundle  --------------->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
