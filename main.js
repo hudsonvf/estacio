@@ -17,27 +17,27 @@ authorSearch.addEventListener('keyup', e => {
 
 //////////////////////////  CADASTRO  /////////////////////////////////////////////////////////////////////
 
-function emailSend() {
-
-    let userName = document.getElementById('cadastroNome').value;
-    let userEmail = document.getElementById('cadastroEmail').value;
-    let userCep = document.getElementById('cadastroCep').value;
-    let userEndereco = document.getElementById('cadastroEndereco').value;
-    let userComplemento = document.getElementById('cadastroComplemento').value;
-    let userCidade = document.getElementById('cadastroCidade').value;
-
-    let mensagemCompleta = "Nome " + userName + "<br/> Email " +
-        userEmail + "<br/> Cep: " + userCep + "<br/> Cidade: " + userCidade +
-        "<br/> Endereço: " + userEndereco + "<br/> Complemento: " + userComplemento;
-
+function sendEmail() {
     Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "hudsonvsf@gmail.com",
-        Password: "5C7461CFC2C28324B1C7CF6569A6E3C823D6",
-        To: "hudsonvdsf@gmail.com",
+        SecureToken: "306d7c22-6db2-4942-b7c9-0b0eff5d4f6d",
+        To: "hudsonvsf@gmail.com",
         From: "hudsonvdsf@gmail.com",
-        Subject: "Contato do site de receita Fritadas",
-        Body: mensagemCompleta
+        Subject: "Msg do site",
+        Body:
+            "Nome: " +
+            document.getElementById("cadastroNome").value +
+            "<br/> Email: " +
+            document.getElementById("cadastroEmail").value +
+            "<br/> Cep: " +
+            document.getElementById("cadastroCep").value +
+            "<br/> Estado: " +
+            document.getElementById("inputGroupSelect01").value +
+            "<br/> Cidade: " +
+            document.getElementById("cadastroCidade").value +
+            "<br/> Endereço: " +
+            document.getElementById("cadastroEndereco").value +
+            "<br/> Complemento: " +
+            document.getElementById("cadastroComplemento").value,
     }).then(
         message => {
             if (message == "OK") {
@@ -49,5 +49,3 @@ function emailSend() {
         }
     );
 }
-
-
