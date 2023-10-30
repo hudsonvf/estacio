@@ -79,17 +79,17 @@
         </div>
 
         <div class="cadastro">
-          <form onsubmit="sendEmail(); reset(); return false">
+            <form action="https://formspree.io/f/xrgwjnen" method="POST">
             
             <div class="input-group mb-3">
-              <input type="text" class="form-control" id="cadastroNome" name="cadastroNome" 
+              <input type="text" class="form-control" id="cadastroNome" name="name" 
               placeholder="Nome e sobrenome" aria-label="Nome e sobrenome"
               aria-describedby="basic-addon1" required >
             </div>
             
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Digite seu email" 
-              id="cadastroEmail" name="cadastroEmail" 
+              id="cadastroEmail" name="email" 
               aria-label="Digite seu melhor email" aria-describedby="basic-addon2" required >
               <span class="input-group-text" id="basic-addon2">exemplo@email.com</span>
             </div>
@@ -97,12 +97,12 @@
             <div class="mb-3 col-6">
               <label for="basic-url" class="form-label">Endereço</label>
               <input type="number" class="form-control" placeholder="Digite seu CEP" 
-              id="cadastroCep" name='cadastroCep' aria-label="Digite seu CEP"
+              id="cadastroCep" name='zip address' aria-label="Digite seu CEP"
               aria-describedby="basic-addon2" required >
             </div>
             
             <div class="input-group mb-3">
-              <select class="form-select" id="inputGroupSelect01">
+              <select class="form-select" id="inputGroupSelect01" name="state" >
                 <option selected>Escolha o Estado...</option>
                 <option value="1">Distrito Federal</option>
                 <option value="2">Acre</option>
@@ -132,7 +132,7 @@
                 <option value="26">Sergipe</option>
                 <option value="27">Tocantins</option>
               </select>
-              <input type="text" id="cadastroCidade" name="cadastroCidade" 
+              <input type="text" id="cadastroCidade" name="city" 
               class="form-control" placeholder="Cidade" aria-label="Escolha a cidade"
               aria-describedby="basic-addon1" required >
             </div>
@@ -142,13 +142,13 @@
                 <div class="input-group">
                   <span class="input-group-text">Endereço<br/> completo</span>
                   <textarea class="form-control" aria-label="Endereço completo" 
-                  id="cadastroEndereco" name="cadastroEndereco" 
+                  id="cadastroEndereco" name="address" 
                   aria-label="Endereço completo" required ></textarea>
                 </div>
               </div>
               <div class="form-text mb-3" id="basic-addon4">Exemplo Rua 1, bairro centro, número 1 ...</div>
               <input type="text" class="form-control" placeholder="Complemento..."
-              id="cadastroComplemento" name="cadastroComplemento" 
+              id="cadastroComplemento" name="complement" 
                 aria-label="Complemento" aria-describedby="basic-addon1" required >
               </div>
               
@@ -174,12 +174,6 @@
 
     <!---------------  Javascript Main.js  --------------->
     <script src="./main.js"></script>
-
-    <!---------------  Sweet Alert Email enviado  --------------->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <!---------------  SMTP Javascript Enviar Email  --------------->
-    <script src="http://smtpjs.com/v3/smtp.js"></script>
 
     <!---------------  Bootstrap Bundle  --------------->
     <script
