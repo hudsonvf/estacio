@@ -83,13 +83,13 @@
   background-color: var(--cor-vermelho-transparente);
 }
 
-.h1-no-banner, .p-no-banner {
+.h1-no-banner,
+.h1-no-banner2,
+.p-no-banner2,
+.p-no-banner {
   color: white;
 }
 
-.h1-no-banner2, .p-no-banner2 {
-  color: white;
-}
 
 /****** Section Sessao ( Body ) *********************************************/
 
@@ -109,7 +109,7 @@
 }
 
 .sessao-conteudo {
-  width: 100%;
+  width: 98%;
 }
 
 .texto-sessao-conteudo {
@@ -128,12 +128,16 @@
 .imagem-salmon-sessao-conteudo,
 .imagem-salada-sessao-conteudo {
   border-radius: 50px;
-  box-shadow: 10px 10px 25px #c7c7c7;
+  box-shadow: 10px 10px 25px #cacaca;
 }
 
 /***** Section 2 Sessao 2 *********/
 
+
 .sessao2-div {
+  position: relative;
+  width: 100%;
+  height: auto;
   margin-top: 200px;
 }
 
@@ -144,43 +148,22 @@
   opacity: 0.4;
 }
 
-.cta-sessao2 {
-  cursor: pointer;
+.botao-cta-sessao2 {
   text-decoration: none;
-}
-
-.div-na-imagem-sessao2 {
-  background-color: var(--cor-vermelho-transparente);
-  width: 45%;
-  height: 45%;
-  border-radius: 13px;
-  position: relative;
-  margin: 0 auto;
-  box-shadow: 15px 15px 10px #37373785;
-  transition: all 0.28s ease-out;
-}
-
-.div-na-imagem-sessao2:hover {
-  box-shadow: none;
-  transform: scale(1.1);
-}
-
-.texto-na-imagem-sessao2 {
-  margin-top: -360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  padding: 30px 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
   text-align: center;
-  padding-top: 60px;
-  font-size: x-large;
-  color: var(--cor-branco);
-}
-
-.h1-na-imagem-sessao2 {
-  font-size: 70px;
-  text-align: center;
-  color: var(--cor-branco);
-}
-
-.p-conteudo-sessao2 {
-  font-size: 21px;
+  box-shadow: 10px 10px 20px #6d6d6d;
+  transition: all 0.27s ease-out;
 }
 
 
@@ -240,9 +223,12 @@
 /****** Cadastro ****************************************************************/
 
 .cadastro {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 200px;
+  padding: 50px;
+  background: linear-gradient(-45deg, rgb(248, 248, 248), rgb(250, 250, 250));
+  border-radius: 3%;
 }
 
 .botao-cadastro {
@@ -266,4 +252,175 @@ footer {
   color: white;
   font-size: 11px;
   padding: 10px;
+}
+
+@media screen and (min-width: 1217px) {
+
+}
+
+@media screen and (max-width: 1216px) {
+  .div-no-banner {
+    height: 55%;
+    padding: 30px;
+  }
+  
+  .div-no-banner2,
+  .div-no-banner3 {
+    height: 35%;
+  }
+
+  .botao-cta-sessao2 {
+    font-size: 30px;
+  }
+
+  .col-texto-sessao-conteudo {
+    width: 40%;
+  }
+
+  .p-conteudo-sessao2b {
+    width: 330px;
+  }
+
+  /*********  CADASTRO  *******************************************/
+
+
+
+
+}
+
+@media screen and (max-width: 1023px) {
+  
+  .div-no-banner {
+    height: 35%;
+  }
+  
+  .div-no-banner2,
+  .div-no-banner3 {
+    height: 25%;
+  }
+
+  .p-no-banner3, 
+  .p-no-banner2 {
+    display: none;
+  }
+
+  .sessao-conteudo {
+    margin-top: -50px !important;
+  }
+
+  .texto-sessao-conteudo {
+    margin-top: 0;
+  }
+
+  .col-texto-sessao-conteudo {
+    width: 35% !important;
+    margin-left: -60px;
+  }
+
+  .p-conteudo-sessao2b {
+    width: 380px;
+  }
+
+  .imagem-salada-sessao-conteudo {
+    margin-top: 40px;
+  }
+
+  /*************  CADASTRO  ***************************************/
+
+
+}
+
+@media screen and (max-width: 991px) {
+  
+  .col-texto-sessao-conteudo {
+    width: 100%;
+  }
+
+  .p-conteudo-sessao2b {
+    width: 300px;
+  }
+
+  .botao-cta-sessao2 {
+    font-size: 24px;
+  }
+  
+  /*************  CADASTRO  ********************************/
+
+  .cadastro {
+    width: 96%;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .h1-sessao {
+    font-size: 50px;
+  }
+
+  .p-conteudo-sessao2b {
+    width: 280px;
+  }
+  
+  .botao-cta-sessao2 {
+    font-size: 16px;
+  }
+
+  /*************  CADASTRO  ********************************/
+
+  #cadastroCep {
+    width: 200%;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .h1-sessao {
+    font-size: 40px;
+  }
+  
+  .botao-cta-sessao2 {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  
+  .col-texto-sessao-conteudo .texto-sessao-conteudo h1,
+  .col-texto-sessao-conteudo .texto-sessao-conteudo p {
+    width: 400px;
+  }
+  
+  .span-botao-cta-sessao2 {
+    display: none;
+  }
+
+  
+}
+
+@media screen and (max-width: 430px) {
+  .col-texto-sessao-conteudo .texto-sessao-conteudo h1,
+  .col-texto-sessao-conteudo .texto-sessao-conteudo p {
+    width: 180px;
+    margin-left: -40px;
+  }
+  
+  /*************  CADASTRO  ********************************/
+
+  .texto-sessao h1, 
+  .texto-sessao p {
+    width: 360px;
+    margin-left: -70px;
+    margin-top: -80px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+   
+  /*************  CADASTRO  ********************************/
+
+   .texto-sessao h1, 
+   .texto-sessao p {
+     width: 240px;
+     margin-left: -50px;
+   }
+
 }
