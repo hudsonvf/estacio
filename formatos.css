@@ -131,8 +131,7 @@
   box-shadow: 10px 10px 25px #cacaca;
 }
 
-/***** Section 2 Sessao 2 *********/
-
+/************ Section 2 Sessao 2 ****************/
 
 .sessao2-div {
   position: relative;
@@ -280,7 +279,6 @@ footer {
   .p-conteudo-sessao2b {
     width: 330px;
   }
-
 }
 
 @media screen and (max-width: 1023px) {
@@ -319,10 +317,6 @@ footer {
   .imagem-salada-sessao-conteudo {
     margin-top: 40px;
   }
-
-  /*************  CADASTRO  ***************************************/
-
-
 }
 
 @media screen and (max-width: 991px) {
@@ -387,16 +381,35 @@ footer {
     display: none;
   }
 
-  
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 490px) {
+  .texto-sessao {
+    margin-left: 80px;  
+  }
+
+  .texto-sessao p {
+    width: 420px !important;
+    margin-left: -90px !important;
+  }
+
   .col-texto-sessao-conteudo .texto-sessao-conteudo h1,
   .col-texto-sessao-conteudo .texto-sessao-conteudo p {
-    width: 180px;
-    margin-left: -40px;
+    width: 100%;
   }
   
+  .p-conteudo-sessao2b {
+    width: 380px !important;
+  }
+
+    /*************  MENU  ********************************/
+  
+    #div-inicio-menu {
+      justify-content: center;
+      text-align: center;
+      margin-left: 50px;
+    }
+
   /*************  CADASTRO  ********************************/
 
   .texto-sessao h1, 
@@ -409,7 +422,20 @@ footer {
 }
 
 @media screen and (max-width: 430px) {
-   
+
+  .texto-sessao h1 {
+    margin-left: -65px !important;
+  }
+
+  .texto-sessao p {
+    width: 330px !important;
+    margin-left: -110px !important;
+  }
+  
+  .p-conteudo-sessao2b {
+    width: 250px !important;
+  }
+
   /*************  CADASTRO  ********************************/
 
    .texto-sessao h1, 
