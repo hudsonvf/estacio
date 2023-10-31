@@ -17,7 +17,7 @@
     />
     <!---------------  Arquivo Css  --------------->
     <link rel="stylesheet" href="./formatos.css" />
-    <title>Menu Fritada's</title>
+    <title>🍝 Cadastro Fritada's 🍣</title>
   </head>
   <body>
 
@@ -58,7 +58,7 @@
 
       <!--------------- Inicio do Conteudo ( Body ) --------------->
 
-      <div class="conteiner">
+      <div class="container">
         <div class="row">
           
           <section class="section-conteudo-menu">
@@ -79,6 +79,7 @@
         </div>
 
         <div class="cadastro">
+
             <form action="https://formspree.io/f/xrgwjnen" method="POST">
             
             <div class="input-group mb-3">
@@ -87,22 +88,23 @@
               aria-describedby="basic-addon1" required >
             </div>
             
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Digite seu email" 
-              id="cadastroEmail" name="email" 
-              aria-label="Digite seu melhor email" aria-describedby="basic-addon2" required >
-              <span class="input-group-text" id="basic-addon2">exemplo@email.com</span>
+            <div class="input-group mb-3 d-flex flex-column">
+              <input type="email" class="form-control w-100" placeholder="Digite seu email" 
+              id="cadastroEmail" name="email" aria-label="Digite seu melhor email"
+              aria-describedby="basic-addon2" required >
+                        
+              <div class="form-text mb-3" id="basic-addon8"> &nbsp; &nbsp; exemplo@email.com</div>
             </div>
             
             <div class="mb-3 col-6">
               <label for="basic-url" class="form-label">Endereço</label>
-              <input type="number" class="form-control" placeholder="Digite seu CEP" 
+              <input type="number" class="form-control" placeholder="CEP" 
               id="cadastroCep" name='zip address' aria-label="Digite seu CEP"
               aria-describedby="basic-addon2" required >
             </div>
             
-            <div class="input-group mb-3">
-              <select class="form-select" id="inputGroupSelect01" name="state" >
+            <div class="input-group mb-3 gap-3 flex-column">
+              <select class="form-select w-100" id="inputGroupSelect01" name="state" >
                 <option selected>Escolha o Estado...</option>
                 <option value="1">Distrito Federal</option>
                 <option value="2">Acre</option>
@@ -133,7 +135,7 @@
                 <option value="27">Tocantins</option>
               </select>
               <input type="text" id="cadastroCidade" name="city" 
-              class="form-control" placeholder="Cidade" aria-label="Escolha a cidade"
+              class="form-control w-100" placeholder="Cidade" aria-label="Escolha a cidade"
               aria-describedby="basic-addon1" required >
             </div>
             
@@ -146,7 +148,7 @@
                   aria-label="Endereço completo" required ></textarea>
                 </div>
               </div>
-              <div class="form-text mb-3" id="basic-addon4">Exemplo Rua 1, bairro centro, número 1 ...</div>
+              <div class="form-text mb-3" id="basic-addon4"> &nbsp; Exemplo Rua 1, bairro centro, número 1 ...</div>
               <input type="text" class="form-control" placeholder="Complemento..."
               id="cadastroComplemento" name="complement" 
                 aria-label="Complemento" aria-describedby="basic-addon1" required >
@@ -174,6 +176,12 @@
 
     <!---------------  Javascript Main.js  --------------->
     <script src="./main.js"></script>
+
+    <!---------------  Sweet Alert Email enviado  --------------->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!---------------  SMTP Javascript Enviar Email  --------------->
+    <script src="http://smtpjs.com/v3/smtp.js"></script>
 
     <!---------------  Bootstrap Bundle  --------------->
     <script
